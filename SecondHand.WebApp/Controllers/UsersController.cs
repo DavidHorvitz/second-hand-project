@@ -18,7 +18,7 @@ namespace SecondHand.WebApp.Controllers
             _context = context;
         }
 
-        // GET: Users
+        // GET: List of users
         public async Task<IActionResult> Index()
         {
             return View(await _context.Users.ToListAsync());
